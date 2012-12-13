@@ -1,0 +1,693 @@
+/* --------------------------------------------
+   HTML5 Style Reset
+-------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+::-moz-selection{ background: #000; color:#fff; text-shadow: none; }
+::selection { background:#000; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+/*---------------------------------
+	MAIN STYLES 
+---------------------------------*/
+
+body { background: #345D9E; font-family: "Helvetica Neue", Arial, sans-serif; color: #383838; text-align: center; }
+	
+	a { color: #9f443b; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	label { margin: 0 0 3px; font-size: 12px; color: blue; font-weight: bold; line-height: 1.2; display: block; }
+	input { padding: 3px 10px 4px; width: 140px; height: 25px; font-size:12px ; }
+
+	
+
+	header { background: #EFD28C; height: 125px; overflow: hidden; clear: both; margin-bottom: 30px; }
+
+		header .logo { display: block; float: left; margin:7px 0 0; padding: 5px; width: 143px; height: 100px; background: url("../img/dwp-logo.png") no-repeat 5px 5px;}
+
+		header hgroup { float: left; color: #345D9E; }
+				header hgroup h1 { font-size: 40px; text-transform: uppercase; text-shadow: 1px 1px 0 #fff; }
+				header hgroup h2 { font-size: 26px; text-shadow: 1px 1px 0 #fff; font-weight: normal; }
+
+		header nav { float: right; margin: 24px 0 0 0; }
+			header nav ul { margin: 0; padding: 0; overflow: hidden; }
+				header nav ul li { list-style: none; float: left; display: inline; margin: 0; padding: 0; border-right: 1px solid #938a78; font-size: 18px; text-transform: uppercase; }
+					header nav ul li a {
+						display: block;
+						background: #c1b7a7;
+						padding: 12px 24px;
+						color: #fff;
+						text-decoration: none;
+						-webkit-transition-property: background; 
+						-webkit-transition-duration: .5s; 
+						-webkit-transition-timing-function: linear;  
+					}
+
+	#login { float: left; }
+
+	.field { clear: none; float: left; margin: 5px 15px 0 0; }
+
+	.login-main { float: right; font-size: 11px; width: 455px; margin: 0; padding: 0; display: block; }
+
+		.login-main .forgot { opacity: .5; float: right; color: green; }
+
+	#signup { overflow: hidden; width: 290px; }
+		#signup .field { clear: both; margin-bottom: 10px; }
+
+  #update { overflow: hidden; width: 900px; }
+    #update .field {  }
+
+
+	.container {width: 1200px; margin: 0 auto; padding: 0; text-align: left;}
+
+		#content-new { overflow: hidden; margin: 40px auto 59px; width: 960px; padding: 0; margin-bottom: 35px; margin-top: 30px;}
+			#content-new .hero-image { float: left; background: ; width: 537px; height: 330px; }
+			#content-new .hero-text { float: left; margin: 32px 0 0 20px; width: 470px; color: #555; }
+			#content-new .right { float: left; width: 350px;}
+			#content-new .right .sign-up h3 { font-size: 24px; color: black; }
+
+		#content { float: left; width: 900px; margin-right: 20px; }
+			/* Change to section */
+			#content article { background: #fff; margin: 0 0 30px 0; padding: 20px 20px 100px; }
+
+				#content article h3 { font-size: 26px; margin-bottom: 4px; }
+				#content article img { float: right; margin: 0 0 10px 10px; }
+				#content article p { font-size: 16px; margin-bottom: 16px; }
+
+    #profile { float: left; width: 900px; margin-right: 20px; }
+      #profile form { background: #fff; margin: 0 0 30px 0; padding: 20px; }
+      #profile .field2 { }
+
+		#sidebar { float: right; width: 280px; }
+			#sidebar aside { background: #fff; margin: 0 0 30px 0; padding: 20px; }
+				#sidebar aside h4 { color: #333; font-size: 16px; margin-bottom: 4px; }
+				#sidebar aside p { font-size: 13px; margin-bottom: 8px; color: #777; }
+				#sidebar aside p:last-child { margin: 0; }
+				#sidebar aside ul { margin: 0; padding: 0; }
+					#sidebar aside ul li { list-style: none; margin-bottom: 6px; }
+
+		footer { clear: both; border-top: 1px solid #383838; padding: 10px 20px; font-size: 14px; }
+
+			footer nav ul { margin: 0 0 8px 0; padding: 0; }
+				footer nav ul li { list-style: none; display: inline; margin-right: 12px; }
+
+#image-list {  
+    list-style:none;  
+    margin:0;  
+    padding:0;  
+}  
+#image-list li {  
+    background: #fff;  
+    border: 1px solid #ccc;  
+    text-align:center;  
+    padding:20px;  
+    margin-bottom:19px;  
+}  
+#image-list li img {  
+    width: 258px;  
+    vertical-align: middle;  
+    border:1px solid #474747;  
+}  
+/*---------------------------------
+	< 1200 px Wide
+---------------------------------*/
+
+@media (max-width: 1200px) {
+
+	#container { width: 960px; }
+		#content { width: 700px; }
+		#sidebar { width: 240px; }
+
+	header hgroup h1 { font-size: 32px; }
+	header hgroup h2 { font-size: 18px; }
+	
+	header nav { margin-top: 18px; }
+		header nav ul li { font-size: 16px; }
+		
+	#banner { margin-bottom: 20px; }
+		
+	#content article { margin-bottom: 12px; }
+		#content article h3 { font-size: 18px; }
+		#content article p { font-size: 14px; }
+		
+	#sidebar aside { margin-bottom: 12px; }
+}
+
+
+/* --------------------------------------------
+  iPad in landscape
+-------------------------------------------- */
+
+/* 	
+	TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+	@media (max-width: 1024px) {  } 
+*/
+	
+@media (max-device-width: 1024px) and (orientation: landscape) {
+
+	#container { width: 768px; }
+		#content { width: 540px; }
+		#sidebar { width: 208px; }
+	
+	header { margin-bottom: 12px; }
+	
+	header hgroup { margin-bottom: 12px; }
+	
+	header nav { float: none; clear: both; }
+		header nav ul { width: 100%; }
+			header nav ul li { font-size: 14px; width: 191px; text-align: center; }
+				header nav ul li:last-child { width: 192px; }
+			
+	#banner { margin-bottom: 18px; }
+		
+	#content article img { float: none; margin: 0 0 10px 0; width: 100%; }
+
+}
+
+
+/* --------------------------------------------
+  iPad in portrait
+-------------------------------------------- */
+
+/* 	
+	TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+	@media (max-width: 768px) {  } 
+*/
+
+@media (max-device-width: 1024px) and (orientation: portrait) {
+
+	#container { width: 600px; }
+		#content { float: none; width: 600px; margin: 0 0 12px 0; }
+		#sidebar { float: none; width: 600px; }
+	
+	header { margin-bottom: 12px; }
+	
+	header hgroup { margin-bottom: 12px; }
+	
+	header nav { float: none; clear: both; }
+		header nav ul { width: 100%; }
+			header nav ul li { font-size: 14px; width: 149px; text-align: center; }
+				header nav ul li:last-child { width: 150px; }
+			
+	#banner { margin-bottom: 18px; }
+	
+	#content article { padding: 20px; }
+		#content article img { float: none; margin: 0 0 10px 0; width: 100%; }
+	
+	#sidebar aside { background: #A79F91; color: #fff; float: left; width: 250px; min-height: 170px; margin-right: 20px; padding: 20px; }
+		#sidebar aside:last-child { margin: 0; }
+
+}
+
+
+/* --------------------------------------------
+  Mobile
+-------------------------------------------- */
+
+@media (max-width: 600px) {
+
+	#container, #content { float: none; width: inherit; }
+		#content { margin: 0; }
+	
+	#sidebar { display: none; }
+	
+	header { margin: 0 0 12px 0; text-align: center; }
+		header hgroup { width: 100%; margin-bottom: 12px; }
+			header hgroup h1 { font-size: 24px; }
+			header hgroup h2 { font-size: 14px; }
+	
+		header nav { float: none; clear: both; }
+			header nav ul { width: 100%; }
+				header nav ul li { float: none; display: block; width: 100%; font-size: 14px; text-align: left; border-bottom: 1px solid #938a78; }
+					header nav ul li:last-child { width: 100%; border-bottom: 0; }
+					header nav ul li a { padding: 10px; }
+	
+	#content article { padding: 10px; -webkit-border-radius: 0; }
+		#content article h3 { font-size: 16px; }
+		#content article p { font-size: 12px; }
+		#content article img { display: none; }
+	
+	#sidebar aside { background: #A79F91; color: #fff; float: left; width: 250px; min-height: 170px; margin-right: 20px; padding: 20px; }
+		#sidebar aside:last-child { margin: 0; }
+		
+	footer { padding: 10px; font-size: 12px; }
+
+}
+
+/* --------------------------------------------
+  Twitter BootStrap Stuff
+-------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+.btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn {
+  border-color: #c5c5c5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
+}
+.btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+.btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #0088cc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-link:hover {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover {
+  color: #333333;
+  text-decoration: none;
+}
